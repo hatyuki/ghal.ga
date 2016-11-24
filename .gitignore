@@ -1,0 +1,5 @@
+/.idea/
+/gh-pages/
+/node_modules/
+/vendor/
+/.envrc

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "MyYuGothicM";
+  font-weight: normal;
+  src: local("YuGothic-Medium"), local("Yu Gothic Medium"), local("YuGothic-Regular");
+}
+
+@font-face {
+  font-family: "MyYuGothicM";
+  font-weight: bold;
+  src: local("YuGothic-Bold"), local("Yu Gothic");
+}
+
+html, body {
+  background-color: #f9f9f9;
+  color: #444;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", MyYuGothicM, Meiryo, sans-serif;
+}
+
+header, main {
+  margin: 0 0 1.25rem 0;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+}
+
+h1, h2 {
+  margin: 0 0 1rem 0;
+}
+
+p {
+  margin: 0 0 .75rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 61.8%;
+    max-width: 1200px;
+  }
+}
+
+.hero {
+  background-color: #302443;
+  color: #fff;
+  padding-top: 23.6vh;
+  height: 61.8vh;
+  min-height: 10.5rem;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0.25rem;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-weight: lighter;
+  }
+}
+
+.example {
+  margin: 0 0 .75rem 0;
+  padding: 0.75rem;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}

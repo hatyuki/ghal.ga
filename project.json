@@ -1,0 +1,9 @@
+{
+  "name": "ghal",
+  "description": "Navigate to GitHub Asset Location.",
+  "runtime": "golang",
+  "memory": 128,
+  "timeout": 10,
+  "role": "arn:aws:iam::756960195932:role/ghal.ga",
+  "environment": { }
+}

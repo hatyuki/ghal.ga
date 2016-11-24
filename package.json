@@ -1,0 +1,21 @@
+{
+  "name": "github-asset-locator",
+  "version": "0.0.1",
+  "description": "GitHub asset locator",
+  "private": true,
+  "scripts": {
+    "build": "npm run pug & npm run sass",
+    "pug": "pug --out gh-pages docs/pug",
+    "sass": "node-sass --output-style compressed --output gh-pages/styles docs/styles",
+    "server": "browser-sync start --server gh-pages --files gh-pages",
+    "watch": "npm run watch:pug & npm run watch:sass & npm run server",
+    "watch:pug": "pug --out gh-pages --watch docs/pug",
+    "watch:sass": "node-sass --watch --output-style compressed --output gh-pages/styles docs/styles"
+  },
+  "author": "hatyuki",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "node-sass": "^3.13.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
